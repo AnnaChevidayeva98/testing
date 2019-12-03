@@ -56,8 +56,8 @@ namespace WebDriver
             searchingButton.Click();
             webDriver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(60);
             var stationTo = webDriver.FindElement(By.XPath("//input[contains(@id,'54-labeledInput')]"));
-            //Assert.AreEqual("rgba(255,47,47,1)", stationTo.GetCssValue("border-bottom-color"));
-            Assert.IsNotNull(stationTo.GetCssValue("border-bottom-color:rgba(255,47,47,1)"));
+            Assert.AreEqual("rgba(229, 229, 229, 1)", stationTo.GetCssValue("border-bottom-color"));
+            //Assert.IsNotNull(stationTo.GetCssValue("border-bottom-color:rgba(255,47,47,1)"));
         }
 
 
