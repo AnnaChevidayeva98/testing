@@ -46,7 +46,7 @@ namespace PageObject
         [TestCleanup]
         public void Clean()
         {
-            //Browser.Quit();
+            Browser.Quit();
         }
     }
 }
