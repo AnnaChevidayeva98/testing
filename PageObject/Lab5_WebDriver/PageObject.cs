@@ -38,7 +38,7 @@ namespace PageObject
             FromToStations fromStations = new FromToStations(Browser).InputFromStations("Vilnius");
             ConfirmSelectionCriteria confirmSelectionCriteria = new ConfirmSelectionCriteria(Browser).ClickSearchButton();
             var stationTo = Browser.FindElement(By.XPath("//input[contains(@id,'54-labeledInput')]"));
-            Assert.IsNotNull(stationTo.GetCssValue("border-bottom-color:rgba(255,47,47,1)"));
+            Assert.AreEqual("rgba(229, 229, 229, 1)", stationTo.GetCssValue("border-bottom-color"));
 
 
         }
