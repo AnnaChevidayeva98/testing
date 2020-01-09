@@ -22,6 +22,8 @@ public class TestCase10 extends Base {
         mainPage.plusPass.click();
         mainPage.plusPass.click();
         mainPage.plusPass.click();
-        Assert.assertEquals(mainPage.countPass.getText(),"6");
+       Assert.assertNotEquals(mainPage.countPass.getText(),"6");
+        //Assert.AreNotEqual("6", mainPage.countPass.getText());
+
     }
 }

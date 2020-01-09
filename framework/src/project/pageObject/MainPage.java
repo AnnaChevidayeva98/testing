@@ -26,6 +26,7 @@ public class MainPage {
     public Button pass = new Button(By.xpath("//div[@class='passengers-count-open form-label']"),"pass");
     public Button plusPass = new Button(By.xpath("(//button[contains(@class,'count-icon count-plus act')])[1]"),"plus pass");
     public Label countPass = new Label(By.xpath("(//div[@class='count-value'])[1]"),"Count pass");
+    public Button ltLang = new Button(By.xpath("//a[contains(text(),'LT')]"),"plus pass");
 
 
 

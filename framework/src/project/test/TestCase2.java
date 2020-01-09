@@ -11,8 +11,8 @@ public class TestCase2 extends Base {
     public void testCase2() {
         MainPage mainPage = new MainPage();
         Assert.assertTrue(mainPage.panel.isDisplayed(), "Main page did not opened");
-        mainPage.cityFrom.sendKeys("Вильнюс");
-        mainPage.cityTo.sendKeys("Минск");
+        mainPage.cityFrom.sendKeys("Vilnius");
+        mainPage.cityTo.sendKeys("Minsk");
         mainPage.calendarFrom.click();
         Assert.assertTrue(mainPage.yesterday.isDisplayed());
     }

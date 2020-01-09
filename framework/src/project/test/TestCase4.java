@@ -11,8 +11,10 @@ public class TestCase4 extends Base {
     public void testCase4() {
         MainPage mainPage = new MainPage();
         Assert.assertTrue(mainPage.panel.isDisplayed(), "Main page did not opened");
-        mainPage.cityFrom.sendKeys("Вильнюс");
-        mainPage.cityTo.sendKeys("Вильнюс");
+        mainPage.languagesMenu.click();
+        mainPage.ltLang.click();
+        mainPage.cityFrom.sendKeys("Vilnius");
+        mainPage.cityTo.sendKeys("Vilnius");
         mainPage.calendarFrom.click();
         mainPage.dayWeek.click();
         mainPage.search.click();

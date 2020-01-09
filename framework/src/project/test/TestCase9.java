@@ -20,11 +20,12 @@ public class TestCase9 extends Base {
         Assert.assertTrue(searchResultPage.resultPanel.isDisplayed(), "Search result page did not opened");
         searchResultPage.price.click();
         searchResultPage.chooseClass.click();
-        searchResultPage.accept.waitVisibilityOfElement();
-        searchResultPage.accept.click();
+        if(searchResultPage.accept.isDisplayed()) {
+            searchResultPage.accept.click();
+        }
         searchResultPage.name.sendKeys("Anya");
         searchResultPage.surname.sendKeys("Chevidaeva");
-        Browser.ScrollPage("0","400");
+        Browser.ScrollPage("0","9000");
         searchResultPage.acceptData.hoverElement();
         searchResultPage.acceptData.click();
         searchResultPage.email.waitVisibilityOfElement();
@@ -35,6 +36,7 @@ public class TestCase9 extends Base {
         searchResultPage.oplata.click();
         Thread.sleep(3000);
         searchResultPage.oplata.click();
+        Browser.ScrollPage("0","9000");
         searchResultPage.oplata.click();
         TransactionPage transactionPage = new TransactionPage();
         Assert.assertTrue(transactionPage.panel.isDisplayed(), "Transaction page did not opened");

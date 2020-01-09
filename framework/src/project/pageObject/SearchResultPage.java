@@ -7,7 +7,7 @@ import org.openqa.selenium.By;
 
 public class SearchResultPage {
     public Label resultPanel = new Label(By.xpath("//div[contains(@class,'main-cont departure-page')]"), "resultPanel");
-    public Label schedulePanel = new Label(By.xpath("//div[@class='schedule-page']"),"Schedule panel");
+    public Label schedulePanel = new Label(By.xpath("//div[contains(@class,'timetable-row departure-row complete')]"),"Schedule panel");
     public Button price = new Button(By.xpath("(//div[contains(@class,'timetable-price departure-price act timetable-second-class departure-second-class')])[1]"), "price");
     public Button chooseClass = new Button(By.xpath("(//div[contains(@class,'timetable-submit-btn departure-submit-btn act')])[1]"), "class");
     public Button accept = new Button(By.xpath("//div[contains(@class,'checkout-item-modal-trigger modal-trigger policy-body-btn form-item act btn btn-y passenger-submit')]"), "submit");

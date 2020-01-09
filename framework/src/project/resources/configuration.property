@@ -2,5 +2,5 @@ browser=chrome
 lang=en-US
 url=https://www.traukiniobilietas.lt/portal/
 log_config=src/project/resources/log.properties
-implicitlyWait=5
+implicitlyWait=15
 explicitlyWait=10
