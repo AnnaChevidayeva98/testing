@@ -29,6 +29,7 @@ public class TestCase6 extends Base {
         searchResultPage.name.sendKeys("Anya");
         searchResultPage.surname.sendKeys("Chevidaeva");
         Browser.ScrollPage("0","9000");
+        searchResultPage.MesClose.click();
         searchResultPage.acceptData.hoverElement();
         searchResultPage.acceptData.click();
         searchResultPage.email.waitVisibilityOfElement();
