@@ -12,6 +12,6 @@ public class TestCase3 extends Base {
         Assert.assertTrue(mainPage.panel.isDisplayed(), "Main page did not opened");
         mainPage.languagesMenu.click();
         mainPage.ruLang.click();
-        Assert.assertEquals(mainPage.textCityFrom.getText(),"I?","Translation is not full");
+        Assert.assertEquals(mainPage.textCityFrom.getText(),"Iš","Translation is not full");
     }
 }
