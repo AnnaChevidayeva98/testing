@@ -41,7 +41,6 @@ public class TestCase6 extends Base {
         Thread.sleep(3000);
         searchResultPage.oplata.click();
         Browser.ScrollPage("0","9000");
-
         searchResultPage.oplata.click();
         TransactionPage transactionPage = new TransactionPage();
         Assert.assertTrue(transactionPage.panel.isDisplayed(), "Transaction page did not opened");

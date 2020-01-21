@@ -1,4 +1,4 @@
-﻿package project.test;
+package project.test;
 
 import org.testng.Assert;
 import org.testng.annotations.Test;
